@@ -1,20 +1,10 @@
 <template>
-  <!-- <base-button variant="primary"></base-button>
-  <base-button variant="secondary"></base-button>
-  <base-button color="#ff5733"></base-button> -->
-  <base-calender></base-calender>
+  <router-view> </router-view>
 </template>
 
 <script>
-import BaseButton from "./components/BaseButton.vue";
-import BaseCalender from "./components/BaseCalender.vue";
-
 export default {
   name: "App",
-  components: {
-    BaseButton,
-    BaseCalender,
-  },
 };
 </script>
 
@@ -27,7 +17,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
-  border-block: box-sizing;
+  box-sizing: border-box;
 }
 
 #app {
@@ -36,5 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  -webkit-tap-highlight-color: transparent;
 }
 </style>
