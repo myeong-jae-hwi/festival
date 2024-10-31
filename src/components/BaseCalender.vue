@@ -34,7 +34,6 @@
   </div>
 
   <div class="tab-content">
-    <p v-if="selectedDate">선택된 날짜: {{ formatDate(selectedDate) }}</p>
     <div v-if="selectedDate" class="date-content">
       <component :is="currentDateComponent" v-if="currentDateComponent" />
       <p v-else>이 날짜에 대한 컨텐츠가 없습니다.</p>
@@ -128,7 +127,7 @@ export default {
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
 }
 
@@ -149,9 +148,9 @@ export default {
   transition: background-color 0.2s;
 }
 
-.calendar-nav-btn:hover {
+/* .calendar-nav-btn:hover {
   background-color: #f0f0f0;
-}
+} */
 
 .calendar-header-data {
   margin: 0;
@@ -203,6 +202,7 @@ export default {
 
 .date.today {
   border: 2px solid #6f42c1;
+  padding: 0.3rem;
 }
 
 .sunday {
@@ -214,7 +214,6 @@ export default {
 }
 
 .tab-content {
-  margin-top: 2rem;
   padding: 1rem;
 }
 
