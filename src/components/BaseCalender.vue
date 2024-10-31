@@ -69,7 +69,6 @@ export default {
         currentWeek.push(date);
       }
 
-      // Update current month and year based on the first day of the week
       this.currentMonth = currentWeek[0].getMonth() + 1;
       this.currentYear = currentWeek[0].getFullYear();
 
@@ -77,7 +76,7 @@ export default {
     },
 
     currentDateComponent() {
-      // Dynamic component loading based on date
+      // 여기가 날짜 기반으로 컴포넌트를 변경하는 로직인데 분리할 예정
       if (this.selectedDate) {
         const day = this.selectedDate.getDate();
         return day === 25 ? "Day25Content" : null;

@@ -64,7 +64,7 @@ button {
 }
 
 .btn-secondary {
-  background-color: rgb(200, 200, 200);
+  background-color: #a786e3;
   color: rgb(255, 255, 255);
 }
 
