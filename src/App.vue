@@ -9,11 +9,6 @@ export default {
 </script>
 
 <style>
-@font-face {
-  font-family: Pretendard;
-  src: url(./assets/font/pretendard/woff2/PretendardVariable.woff2);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +16,7 @@ export default {
 }
 
 #app {
-  font-family: Pretendard, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Pretendard Variable, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
