@@ -1,9 +1,7 @@
 <template>
   <div class="calendar-container">
     <header class="calendar-header">
-      <button class="calendar-nav-btn" @click="navigateWeek(-1)">&lt;</button>
       <h4 class="calendar-header-data">{{ currentYear }}년 {{ currentMonth }}월</h4>
-      <button class="calendar-nav-btn" @click="navigateWeek(1)">&gt;</button>
     </header>
 
     <div class="calendar-days">
@@ -36,7 +34,7 @@
 
 <script>
 export default {
-  name: "WeeklyCalendar",
+  name: "Calendar",
 
   data() {
     return {
@@ -74,6 +72,7 @@ export default {
 
     changeSelctedDate(date) {
       this.selectedDate = date;
+      this.$emit("date-selected", date);
     },
 
     isSameDate(date1, date2) {
@@ -171,6 +170,10 @@ export default {
 .date.today {
   border: 2px solid #6f42c1;
   padding: 0.3rem;
+  width: 2rem;
+  inline-size: 2rem;
+  height: 2rem;
+  block-size: 2rem;
 }
 
 .sunday {
