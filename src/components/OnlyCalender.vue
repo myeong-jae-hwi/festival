@@ -42,7 +42,7 @@ export default {
       currentMonth: new Date().getMonth() + 1,
       daysOfWeek: ["일", "월", "화", "수", "목", "금", "토"],
       selectedDate: new Date(),
-      disableDay: [27, 28, 29, 2],
+      disableDay: [27, 28, 29],
       weekOffset: 0,
     };
   },
@@ -95,14 +95,14 @@ export default {
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* max-width: 600px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .calendar-nav-btn {
